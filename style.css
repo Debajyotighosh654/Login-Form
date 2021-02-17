@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+
+body{
+  
+  background-color: #357EC7;
+}
+.hero{
+  width:500px;
+  background: #151B54;
+   height: 410px;
+  padding: 80px 50px;
+  border-radius: 5px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+upper-width:50px;
+lower-width:100px;
+}
+.trapezium { 
+     position: absolute; 
+     top: 50%; 
+     left: 65%; 
+     transform: translate(-50%, -50%); 
+     height: 0; 
+     width: 50%; 
+     border-bottom: 610px  solid #ADD8E6; 
+     border-left: 156px solid transparent; 
+     border-right: 100px solid transparent; 
+  } 
+.login-form{
+  
+  width: 46%;
+  background: #ADD8E6;
+  height:610px;
+  padding: 80px 50px;
+  border-radius: 5px;
+  position: absolute;
+  left: 77%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+ }
+
+.login-form h1{
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.txtb{
+  border-bottom: 3px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+.txtb input{
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+  right:20%
+  
+}
+
+.txtb span::before{
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+
+.txtb span::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 0px;
+  background: none;
+  transition: .5s;
+}
+
+.focus + span::before{
+  top: -5px;
+}
+.focus + span::after{
+  width: 100%;
+}
+
+.logbtn{
+  display: block;
+  width: 20%;
+  height: 35px;
+  border: none;
+  background: #5995fd ;
+  backdrop-filter: blur(3px);
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+  margin-left:80%;
+  
+}
+
+.logbtn:hover{
+  background-position: left;
+}
+
+.bottom-text{
+  margin-top: 60px;
+  text-align: center;
+  font-size: 13px;
+}
